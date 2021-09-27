@@ -1,10 +1,103 @@
+/*? COMMON */
 * {
   padding: 0;
   margin: 0;
   color: #000;
+  font-size: 15px;
   font-family: "Lato", sans-serif;
 }
+/*? -----END COMMON */
+/*? HEADER */
+#Header {
+  position: fixed;
+  width: 100%;
+  background-color: #000;
+  height: 46.5px;
+}
 
-/*? Header */
+#Nav {
+  height: 46.5px;
+  display: inline-block;
+}
 
+#Nav > ul {
+  height: 46.5px;
+}
+
+#Nav > ul > li {
+  display: inline-block;
+  line-height: 1.5;
+  height: 46.5px;
+  position: relative;
+}
+
+#Nav > ul > li > a {
+  display: inline-block;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+#Nav > ul > li:hover {
+  background-color: #ccc;
+}
+
+#Nav > ul > li:hover a {
+  color: #000;
+  font-weight: 450;
+}
+#Nav > ul > li:hover i {
+  color: #000;
+}
+
+#Nav li:hover .sub-nav {
+  display: block;
+}
+
+.sub-nav {
+  top: 0;
+  margin-top: 46.5px;
+  box-sizing: border-box;
+  min-width: 160px;
+  position: absolute;
+  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+  display: none;
+}
+
+.sub-nav li {
+  display: block;
+}
+
+.sub-nav li a {
+  padding: 8px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.sub-nav li:hover {
+  background-color: #ccc;
+}
+
+#Icon-down {
+  color: #fff;
+  margin-left: 4px;
+}
+
+#Header #Icon-search {
+  display: block;
+  float: right;
+  height: 46.5px;
+  padding: 12px 24px;
+  box-sizing: border-box;
+}
+
+#Header #Icon-search:hover {
+  background-color: #f44336;
+}
+
+#Header #Icon-search i {
+  color: #fff;
+  font-size: 15px;
+}
 /*? -----END Header */
