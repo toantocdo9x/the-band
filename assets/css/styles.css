@@ -6,13 +6,70 @@
   font-size: 15px;
   font-family: "Lato", sans-serif;
 }
+
+.row {
+  max-width: 800px;
+  padding: 64px 16px;
+  margin: 0 auto;
+}
+
+.col {
+  padding: 32px 0px;
+  float: left;
+  width: 100%;
+}
+
+.col-third {
+  width: 33.33333%;
+  float: left;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+  letter-spacing: 4px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 10px 0;
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #fff;
+}
+
+p {
+  font-size: 15px;
+  margin: 15px 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #000;
+}
+
+span {
+  font-family: "Lato", sans-serif;
+  opacity: 0.6;
+  font-size: 15px;
+  line-height: 1.5;
+  display: block;
+  text-align: center;
+}
+
 /*? -----END COMMON */
 /*? HEADER */
 #Header {
-  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: #000;
   height: 46.5px;
+  z-index: 1;
+  position: fixed;
 }
 
 #Nav {
@@ -57,6 +114,7 @@
 
 .sub-nav {
   top: 0;
+  background-color: #fff;
   margin-top: 46.5px;
   box-sizing: border-box;
   min-width: 160px;
@@ -101,3 +159,47 @@
   font-size: 15px;
 }
 /*? -----END Header */
+
+/*? Slider */
+#Slider {
+  margin-top: 46.5px;
+  background: url(/assets/img/Slider/chicago.jpg) top center / cover no-repeat;
+
+  /* background-repeat: none;
+  background-clip: border-box;
+  background-size: cover; */
+  padding-top: 50%;
+  position: relative;
+}
+
+#Slider #text-content {
+  position: absolute;
+  padding: 32px 16px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#Slider #text-content p {
+  color: #fff;
+}
+
+/*? -----END Slider */
+
+/*? The Band */
+
+#The-band > p {
+  text-align: justify;
+}
+
+#The-band #List-Items .item-name {
+  text-align: center;
+}
+
+#The-band #List-Items img {
+  margin-bottom: 16px;
+  border-radius: 4px;
+  width: 154px;
+}
+
+/*? -----END The Band */
