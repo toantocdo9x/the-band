@@ -6,200 +6,119 @@
   font-size: 15px;
   font-family: "Lato", sans-serif;
 }
-
-.row {
-  max-width: 800px;
+/*! COMMON */
+.row-32 {
   padding: 64px 16px;
+}
+
+.row-64 {
+  padding: 64px 16px;
+}
+
+.center {
   margin: 0 auto;
 }
 
-.col {
-  padding: 32px 0px;
-  float: left;
+#Wapper {
   width: 100%;
 }
+/* END */
 
-.col-third {
-  width: 33.33333%;
-  float: left;
-  text-align: center;
-}
+/*! HEADER */
 
-h2 {
-  font-size: 30px;
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-weight: 400;
-  margin: 10px 0;
-  letter-spacing: 4px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-h3 {
-  font-size: 24px;
-  font-weight: 400;
-  margin: 10px 0;
-  text-align: center;
-  font-family: "Segoe UI", Arial, sans-serif;
-  color: #fff;
-}
-
-p {
-  font-size: 15px;
-  margin: 15px 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  color: #000;
-}
-
-span {
-  font-family: "Lato", sans-serif;
-  opacity: 0.6;
-  font-size: 15px;
-  line-height: 1.5;
-  display: block;
-  text-align: center;
-}
-
-/*? -----END COMMON */
-/*? HEADER */
 #Header {
   top: 0;
   left: 0;
-  width: 100%;
-  background-color: #000;
-  height: 46.5px;
-  z-index: 1;
+  width: inherit;
   position: fixed;
+  background-color: #000;
 }
 
-#Nav {
+#Header .nav {
   height: 46.5px;
+  overflow: hidden;
+}
+
+#Header .nav-items {
   display: inline-block;
 }
 
-#Nav > ul {
+#Header .nav-item {
   height: 46.5px;
-}
-
-#Nav > ul > li {
+  padding: 12px 24px;
+  box-sizing: border-box;
   display: inline-block;
-  line-height: 1.5;
-  height: 46.5px;
   position: relative;
 }
 
-#Nav > ul > li > a {
-  display: inline-block;
-  padding: 12px 24px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fff;
-}
-
-#Nav > ul > li:hover {
+#Header .nav-item:hover {
   background-color: #ccc;
 }
 
-#Nav > ul > li:hover a {
+#Header .nav-item:hover a {
   color: #000;
-  font-weight: 450;
+  font-weight: 500;
 }
-#Nav > ul > li:hover i {
+
+#Header .nav-item:hover i {
   color: #000;
 }
 
-#Nav li:hover .sub-nav {
-  display: block;
+#Header .nav-item > a {
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
 }
 
-.sub-nav {
+#Header .nav-item > i {
+  color: #fff;
+}
+
+#Header .sub-nav {
   top: 0;
-  background-color: #fff;
+  left: 0;
+  min-width: 160px;
   margin-top: 46.5px;
   box-sizing: border-box;
-  min-width: 160px;
-  position: absolute;
   box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+  position: absolute;
   display: none;
 }
 
-.sub-nav li {
-  display: block;
-}
-
-.sub-nav li a {
+#Header .sub-nav li {
+  list-style-type: none;
   padding: 8px 16px;
-  display: block;
-  text-decoration: none;
 }
 
-.sub-nav li:hover {
+#Header .sub-nav li:hover {
   background-color: #ccc;
 }
 
-#Icon-down {
-  color: #fff;
-  margin-left: 4px;
-}
-
-#Header #Icon-search {
+#Header .nav-item:hover .sub-nav {
   display: block;
-  float: right;
-  height: 46.5px;
-  padding: 12px 24px;
-  box-sizing: border-box;
 }
 
-#Header #Icon-search:hover {
+#Header .search-icon {
+  height: 46.5px;
+  float: right;
+  box-sizing: border-box;
+  margin: auto 0;
+}
+
+#Header .search-icon:hover {
   background-color: #f44336;
 }
 
-#Header #Icon-search i {
+#Header .search-icon i {
   color: #fff;
-  font-size: 15px;
-}
-/*? -----END Header */
-
-/*? Slider */
-#Slider {
-  margin-top: 46.5px;
-  background: url(/assets/img/Slider/chicago.jpg) top center / cover no-repeat;
-
-  /* background-repeat: none;
-  background-clip: border-box;
-  background-size: cover; */
-  padding-top: 50%;
-  position: relative;
+  line-height: 1.5;
+  padding: 12px 24px;
 }
 
-#Slider #text-content {
-  position: absolute;
-  padding: 32px 16px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
+/* END */
 
-#Slider #text-content p {
-  color: #fff;
-}
+/*! CONTENT */
 
-/*? -----END Slider */
-
-/*? The Band */
-
-#The-band > p {
-  text-align: justify;
-}
-
-#The-band #List-Items .item-name {
-  text-align: center;
-}
-
-#The-band #List-Items img {
-  margin-bottom: 16px;
-  border-radius: 4px;
-  width: 154px;
-}
-
-/*? -----END The Band */
+/* END */
