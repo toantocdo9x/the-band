@@ -36,7 +36,6 @@
 
 #Header .nav {
   height: 46.5px;
-  overflow: hidden;
 }
 
 #Header .nav-items {
@@ -81,6 +80,7 @@
   left: 0;
   min-width: 160px;
   margin-top: 46.5px;
+  background-color: #fff;
   box-sizing: border-box;
   box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
   position: absolute;
@@ -120,5 +120,12 @@
 /* END */
 
 /*! CONTENT */
+
+#Slider {
+  padding-top: 50%;
+  margin-top: 46.5px;
+  background: url(/assets/img/Slider/chicago.jpg) top center / cover no-repeat;
+  background-clip: border-box;
+}
 
 /* END */
